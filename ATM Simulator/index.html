@@ -1,0 +1,38 @@
+<!-- Color Palette: #24292e, #2b3137, #fafbfc, #ffffff, #2dba4e -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATM UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#24292e] text-white flex justify-center items-center h-screen">
+  <div class="bg-[#2b3137] p-8 rounded-xl shadow-2xl w-full max-w-sm select-none">
+    <input type="text" class="input w-full py-3 px-4 mb-6 rounded-lg bg-[#fafbfc] text-black text-center text-xl font-semibold outline-none shadow-inner" placeholder="ATM Number">
+
+    <div class="grid grid-cols-3 gap-4">
+      <!-- Number Buttons -->
+      <button class="atm-btn w-full h-14 rounded-full border border-white flex items-center justify-center text-lg transition-all duration-200 hover:bg-[#24292e] hover:text-white">1</button>
+      <button class="atm-btn w-full h-14 rounded-full border border-white flex items-center justify-center text-lg transition-all duration-200 hover:bg-[#24292e] hover:text-white">2</button>
+      <button class="atm-btn w-full h-14 rounded-full border border-white flex items-center justify-center text-lg transition-all duration-200 hover:bg-[#24292e] hover:text-white">3</button>
+
+      <button class="atm-btn w-full h-14 rounded-full border border-white flex items-center justify-center text-lg transition-all duration-200 hover:bg-[#24292e] hover:text-white">4</button>
+      <button class="atm-btn w-full h-14 rounded-full border border-white flex items-center justify-center text-lg transition-all duration-200 hover:bg-[#24292e] hover:text-white">5</button>
+      <button class="atm-btn w-full h-14 rounded-full border border-white flex items-center justify-center text-lg transition-all duration-200 hover:bg-[#24292e] hover:text-white">6</button>
+
+      <button class="atm-btn w-full h-14 rounded-full border border-white flex items-center justify-center text-lg transition-all duration-200 hover:bg-[#24292e] hover:text-white">7</button>
+      <button class="atm-btn w-full h-14 rounded-full border border-white flex items-center justify-center text-lg transition-all duration-200 hover:bg-[#24292e] hover:text-white">8</button>
+      <button class="atm-btn w-full h-14 rounded-full border border-white flex items-center justify-center text-lg transition-all duration-200 hover:bg-[#24292e] hover:text-white">9</button>
+
+      <button class="atm-btn text-2xl">&#x232B</button>
+      <button class="atm-btn w-full h-14 rounded-full border border-white flex items-center justify-center text-lg transition-all duration-200 hover:bg-[#24292e] hover:text-white">0</button>
+      <button class="atm-btn text-sm">Done</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

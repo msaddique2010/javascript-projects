@@ -1,0 +1,32 @@
+<!-- ATM Simulator UI using Tailwind CSS -->
+<!-- Color Palette: #24292e, #2b3137, #fafbfc, #ffffff, #2dba4e -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATM Simulator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#2b3137] text-white min-h-screen flex items-center justify-center">
+  <div class="bg-[#24292e] w-96 p-6 rounded-2xl shadow-lg">
+    <div class="bg-[#fafbfc] text-[#24292e] rounded-xl p-4 mb-4 min-h-[100px]">
+      <div class="text-xl mb-2">Balance: Rs. <span id="balance">0</span></div>
+    </div>
+    <div class="flex flex-col gap-2">
+      <input type="number" id="amount" placeholder="Enter amount" class="p-2 rounded-md text-black text-base" />
+      <button class="bg-[#2dba4e] hover:bg-green-600 text-white py-2 rounded-md" id="deposit">Deposit</button>
+      <button class="bg-[#2dba4e] hover:bg-green-600 text-white py-2 rounded-md" id="withdraw">Withdraw</button>
+    </div>
+    <div class="mt-4 max-h-40 overflow-y-auto bg-[#1f2428] p-2 rounded-lg">
+      <div class="font-semibold mb-2">Transaction History:</div>
+        <textarea name="history" id="history" class="bg-[#1f2428] border-[0px] w-full outline-none text-[14px] h-[50px]"></textarea>
+    </div>
+  </div>
+
+  <script src="1st_script.js"></script>
+</body>
+
+</html>
